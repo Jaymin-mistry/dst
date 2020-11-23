@@ -3,6 +3,35 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Data format
+*.csv
+*.xls
+*.xlsx
+*.json
+*.rds
+*.html
+*.doc
+*.docx
+
+# Model formats
+*.h5
+*.pkl
+
+# R files
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+*.rData
+
+# Image file formats
+*.png
+*.svg
+*.jpeg
+*.bmp
+*.pdf
+
+
 # C extensions
 *.so
 
