@@ -37,54 +37,32 @@ cookiecutter gh:vtrokhymenko/dst
 ## using the next project structure
 
 ```markdown
-├── .github
-│   ├── workflows
-│   │   ├── pre-commit.yml
-│   │   └── vale.yml
-│   └── dependabot.yml
-│
-├── LICENSE                         <- will be created if u choose
-├── README.md                       <- the main readme
-│
-├── config                          <- often it's yaml-files with some parameters
-│
-├── data
-│   ├── external                    <- data from third party sources
-│   ├── interim                     <- intermediate data that has been transformed
-│   ├── processed                   <- the final, canonical data sets for modeling
-│   ├── raw                         <- the original, immutable data dump
-│   ├── features                    <- another
-│   └── README.md
-│
-├── docs                            <- a default sphinx project (see sphinx-doc.org for details)
-│
-├── experiments                     <- for any experiments
-│   └── README.md
-│
-├── models                          <- trained & serialized models, model predictions, or model summaries
-│   └── README.md
-│
-├── notebooks                       <- notebooks for research
-│                                      naming convention is a number (for ordering), the creator's initials, and a short `-`
-│                                      delimited description, eg `1.0-jqp-initial-data-exploration`
-│
-├── references                      <- data dictionaries, manuals, and all other explanatory materials
-│   └── README.md
-│
-├── tests                           <- test for project
-│
-├── {{ cookiecutter.repo_name }}    <- source code
-│   ├── __init__.py                 <- makes src a python module eg propose generate with `mkinit`
-│   │
-│   ├── data                        <- scripts to download or generate data
-│   │
-│   ├── models                      <- scripts to train models and then use trained models to make predictions
-│   │
-│   └── visualization               <- scripts to create exploratory and results oriented visualizations
-│
-├── .gitignore                      <- default for python
-│
-└── .pre-commit-config.yaml         <- custom pcc with `isort`, `pre-commit-hooks`, `flake8`, `black`
+    ├── data
+    │   ├── interim        <- Intermediate data that has been transformed.
+    │   ├── processed      <- The final, canonical data sets for modeling.
+    │   └── raw            <- The original, immutable data dump.
+    │
+    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
+    │   └── pull_request_template.md <- Template for pull requests
+    ├── models             <- Trained and serialized models objects
+    │
+    ├── notebooks
+      └── project/theme       <- Each project/theme has a folder for related work
+    │   └── NOTEBOOK_NAMED_CONVENTION.ipynb <- A notebook about a topic with a ticket number and description<- Jupyter notebooks. Naming convention is ticket number (for ordering the creator's initials, and a short free-text `-` delimited description, e.g. `JNE-01-jm-initial-data-exploration`.
+    │
+    ├── outputs            <- Generated analysis as HTML, PDF, LaTeX, graphics and figures
+    │
+    ├── src                <- Source code for use in this project.
+        └── __init__.py    <- Makes src a Python module 
+    │        
+    ├── tests              <- All tests for this project
+    │
+    ├── .gitignore
+    ├── LICENSE
+    ├── README.md          <- The top-level README for developers using this project.
+    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+    │                         generated with `pip freeze > requirements.txt`
+    └── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
 ```
 
 ----
@@ -97,7 +75,7 @@ cookiecutter gh:vtrokhymenko/dst
 * [ocean](https://github.com/surfstudio/Ocean)
 * [kedro](https://github.com/quantumblacklabs/kedro/)
 
-## propose to use next tools
+## Potential tools to add 
 
 * [dvc](https://dvc.org) – open-source version control system for ds projects
 * [cml](https://cml.dev) – continuous machine learning | ci/cd for ml/dl
