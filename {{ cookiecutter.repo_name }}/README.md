@@ -52,6 +52,7 @@ Project Organization
     │        
     ├── tests              <- All tests for this project
     │
+    ├── .gitignore
     ├── LICENSE
     ├── README.md          <- The top-level README for developers using this project.
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
