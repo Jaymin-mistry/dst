@@ -32,6 +32,8 @@ E.g: ```ABC14-I-really-care-helping-my-colleagues-work-together.ipynb```
 Project Organization
 ------------
 
+    ├── .github/workflows  <- Github actions/workflows 
+    ├── config             <- local folder to store secrets etc that is not committed
     ├── data
     │   ├── interim        <- Intermediate data that has been transformed.
     │   ├── processed      <- The final, canonical data sets for modeling.
