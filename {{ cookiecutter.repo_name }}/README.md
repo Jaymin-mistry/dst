@@ -57,9 +57,9 @@ Project Organization
     ├── .gitignore
     ├── LICENSE
     ├── README.md          <- The top-level README for developers using this project.
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    └── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    └── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
+                              generated with `pip freeze > requirements.txt`
+
     
     
 #### Setting up NBSTRIPOUT [link](https://github.com/kynan/nbstripout)
