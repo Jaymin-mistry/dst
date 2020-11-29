@@ -4,7 +4,11 @@ repos:
     hooks:
       - id: black
         args: ["--line-length=119"]
-
+# Remove flake8 once black is working
+#   - repo: https://gitlab.com/pycqa/flake8
+#     rev: 3.7.9
+#     hooks:
+#     - id: flake8
 #  - repo: https://github.com/pre-commit/pre-commit-hooks
 #    rev: v3.2.0
 #    hooks:
