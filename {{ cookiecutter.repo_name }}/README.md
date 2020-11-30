@@ -2,14 +2,19 @@
 
 {{ cookiecutter.project_short_description }}
 
+## PURPOSE
 The purpose of this project structure is to enable:
 - individuals to work together as teams and understand where to find code/items
 - teams to collaborate and individuals to move between teams
 
+## PRINCIPLES
+- *Common structure* makes it easy to know where to find code/items and make it easier to collaborate/ onboard people.
+- *Shared functions* reduce duplication and simplify work.
+- *Continuous Integration* used by default to automate code quality (PEP8) and run tests to ensure code quality
+
 All project structures are a compromise but this is essential for us to work together.
 
 ### GUIDANCE/ GROUND RULES
-
 1.  Store notebooks in the "notebooks" folders based on thematic labelling e.g. “Project_name”,”theme_x”, (...) 
 2.	Within a thematic folder, only notebooks should be stored and they should be named as per the convention below
 3.  No data., output or blob files (.DOC, .XLS, .PDF, .HTML, .PNG, .JPEG or .SVG) should ever enter the repository.
@@ -60,9 +65,20 @@ Project Organization
     └── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
                               generated with `pip freeze > requirements.txt`
 
-    
-    
-#### Setting up NBSTRIPOUT [link](https://github.com/kynan/nbstripout)
+#### Automated PEP8 formatting using [black](https://github.com/psf/black)
+Writing consistently formatted and structured code enables us to work at pace.  [PEP8](https://www.python.org/dev/peps/pep-0008/) is the standard Python coding standard, whilst there are a number of code style checkers/formatters (flake8 etc), black is the most widely adopted by large organisations and can be used to reformat code as well as identify issues.  It can be used on all python files inside directory by running the following command once black is installed.
+```
+black .
+```
+
+
+#### Testing using [Pytest](https://docs.pytest.org/en/stable/getting-started.html#create-your-first-test)
+Pytest is a common python testing framework.  Tests are important for ensuring that changes to code do no break existing functionality and can be run in an automated manner to check this.  Tests should be stored in the "tests" directory and be preceded with "test_XXX.py" so that pytest can identify them.  Tests are run on Pull request using Github actions and can be manually run by using the following command in the repo directory.
+```
+pytest .
+```
+
+#### Setting up [NBSTRIPOUT](https://github.com/kynan/nbstripout)
 nbstripout is a python utility to remove the outputs from jupyter notebook files.  It is important as 
 1. we do not want to commit sensitive data to repos
 2. we do not want our repos to grow excessively large (which will occur if we commit graphs etc)
