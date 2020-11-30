@@ -25,6 +25,7 @@ All project structures are a compromise but this is essential for us to work tog
 7.	All tests should be stored in the tests folder and contained in files beginning test_XXX.py so that they can be detected by pytest
 8.	The folder “models" can be deleted if not required
 10.	Notebooks should be cleared of output before committing. This can be achieved using nbstripout (details below)
+11. The default location for outputs or objects (images, models etc) that need to be persisted and shared is S3.
 
 ------------
 
