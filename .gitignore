@@ -18,10 +18,10 @@ __pycache__/
 *.pkl
 
 # R files
-.Rhistory
-.Rapp.history
-.RData
-.Ruserdata
+*.Rhistory
+*.Rapp.history
+*.RData
+*.Ruserdata
 *.rData
 
 # Image file formats
