@@ -17,14 +17,14 @@ All project structures are a compromise but this is essential for us to work tog
 ### GUIDANCE/ GROUND RULES
 1.  Store notebooks in the "notebooks" folders based on thematic labelling e.g. “Project_name”,”theme_x”, (...) 
 2.	Within a thematic folder, only notebooks should be stored and they should be named as per the convention below
-3.  No data., output or blob files (.DOC, .XLS, .PDF, .HTML, .PNG, .JPEG or .SVG) should ever enter the repository.
-4.  All outputs (e.g images containing graphs etc should be stored into the "outputs" folder
-4.	Any raw or intermediate data files created should be stored in the "data" folder.  No CSV/RDS/JSON/favourite_data_format in any folder aside “/data”. 
-5.	All .py or .R files should be stored in src/ 
-6.  Pytest is the preferred test framework.
-7.	All tests should be stored in the tests folder and contained in files beginning test_XXX.py so that they can be detected by pytest
-8.	The folder “models" can be deleted if not required
-10.	Notebooks should be cleared of output before committing. This can be achieved using nbstripout (details below)
+3. Notebooks should be cleared of output before committing. This can be achieved using nbstripout (details below) 
+4. No data, output or blob files (.DOC, .XLS, .PDF, .HTML, .PNG, .JPEG or .SVG) should ever enter the repository.
+5.  Any raw or intermediate data files created should be stored in the "data" folder.  No CSV/RDS/JSON/favourite_data_format in any folder aside “/data”. 
+6.	All outputs (e.g images containing graphs etc should be stored into the "outputs" folder
+7.	All .py or .R files should be stored in src/ 
+8.  Pytest is the preferred test framework.
+9.	All tests should be stored in the tests folder and contained in files beginning test_XXX.py so that they can be detected by pytest.
+10.	The folder “models" can be deleted if not required
 11. The default location for outputs or objects (images, models etc) that need to be persisted and shared is S3.
 
 ------------
@@ -79,6 +79,17 @@ Pytest is a common python testing framework.  Tests are important for ensuring t
 pytest .
 ```
 
+#### Precommit [pre-commit](https://pre-commit.com/)
+Pre-commit is python tool for managing pre-commit hooks so that issues are fixed before they end up in the commit history of git.  By installing pre-commit in a repo you can ensure your code is of the correct standard before you commit it and prevent issues when conducting PRs, freeing you up to focus on actual code review.  The same code quality checker (black) is used in the PR tests as in the pre-commit hook 
+```
+pip install pre-commit
+
+# Run the following command in the repo directory
+pre-commit install
+
+# This command runs pre-commit against all files in the repo.  Use this the first time it is installed
+ pre-commit run --all-files
+```
 #### Setting up [NBSTRIPOUT](https://github.com/kynan/nbstripout)
 nbstripout is a python utility to remove the outputs from jupyter notebook files.  It is important as 
 1. we do not want to commit sensitive data to repos
