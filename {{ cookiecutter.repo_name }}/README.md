@@ -1,7 +1,7 @@
 # {{ cookiecutter.repo_name }}
 
 {{ cookiecutter.project_short_description }}
-
+![Python code](https://github.com/test-and-trace/{{ cookiecutter.repo_name }}/workflows/Python%20application/badge.svg)   
 ## PURPOSE
 The purpose of this project structure is to enable:
 - individuals to work together as teams and understand where to find code/items
