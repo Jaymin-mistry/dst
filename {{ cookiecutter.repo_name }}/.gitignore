@@ -20,6 +20,7 @@ outputs/
 *.html
 *.doc
 *.docx
+*.zip
 
 # Model formats
 *.h5
