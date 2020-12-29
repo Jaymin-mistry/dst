@@ -63,10 +63,13 @@ Project Organization
     ├── tests              <- All tests for this project
     │
     ├── .gitignore
+    ├── .pre-commit-config.yaml
+    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
     ├── LICENSE
     ├── README.md          <- The top-level README for developers using this project.
     └── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
                               generated with `pip freeze > requirements.txt`
+                  
 
 #### Automated PEP8 formatting using [black](https://github.com/psf/black)
 Writing consistently formatted and structured code enables us to work at pace.  [PEP8](https://www.python.org/dev/peps/pep-0008/) is the standard Python coding standard, whilst there are a number of code style checkers/formatters (flake8 etc), black is the most widely adopted by large organisations and can be used to reformat code as well as identify issues.  It can be used on all python files inside directory by running the following command once black is installed.
