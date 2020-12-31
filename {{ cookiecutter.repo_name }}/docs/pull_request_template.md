@@ -68,7 +68,3 @@ This section refers to [JBC Code Documentation](https://confluencestaging-niaxoc
 
 Refer to each section accordingly and check the boxes once criteria is satisfied
 - [ ] Documentation
-
-## Dashboards and Visualisations
-WIP: awaiting Plotly Dash Enterprise
-
