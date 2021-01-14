@@ -1,4 +1,8 @@
-  
+ nbstripout
+ black
+ pre-commit
+ pytest
+ 
 # local package
 -e .
 
