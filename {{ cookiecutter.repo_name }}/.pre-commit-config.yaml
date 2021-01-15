@@ -10,8 +10,8 @@ repos:
     hooks:
       - id: check-added-large-files
       - id: check-docstring-first
-      - id: check-json
-      - id: check-xml
+      #- id: check-json
+      #- id: check-xml
       - id: check-yaml
       - id: debug-statements
       - id: detect-private-key
