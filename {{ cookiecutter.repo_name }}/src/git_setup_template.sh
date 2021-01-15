@@ -27,6 +27,10 @@ pip install nbstripout pre-commit black
 # Enforces nbstripout for all repos on this VM/instance
 nbstripout --install --global --attributes=~/.config/git/attributes
 
+# Install pre-commit into this repo
+cd SageMaker/{{ cookiecutter.repo_name }}
+pre-commit install
+
 # Check variables set
 echo "The next three lines are a check that this has been implement correctly and should have your name, email and a reference to nbstripout"
 git config user.name
