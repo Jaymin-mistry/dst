@@ -24,6 +24,7 @@ outputs/
 *.pptx
 *.zip
 *.html
+*.txt
 
 # Model formats
 *.h5
