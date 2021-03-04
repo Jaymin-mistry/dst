@@ -3,6 +3,7 @@
 {{ cookiecutter.project_short_description }}
 
 ![Python code](https://github.com/test-and-trace/{{ cookiecutter.repo_name }}/workflows/Python%20application/badge.svg)
+
 ![NBStripout](https://github.com/test-and-trace/{{ cookiecutter.repo_name }}/workflows/NBStripout/badge.svg?branch=master)    
 
 ## PURPOSE
