@@ -3,7 +3,7 @@
 {{ cookiecutter.project_short_description }}
 
 ![Python code](https://github.com/test-and-trace/{{ cookiecutter.repo_name }}/workflows/Python%20application/badge.svg)
-![NBStripout](https://github.com/test-and-trace/jbc-npi-effectiveness/workflows/NBStripout/badge.svg?branch=master)    
+![NBStripout](https://github.com/test-and-trace/{{ cookiecutter.repo_name }}/workflows/NBStripout/badge.svg?branch=master)    
 
 ## PURPOSE
 The purpose of this project structure is to enable:
